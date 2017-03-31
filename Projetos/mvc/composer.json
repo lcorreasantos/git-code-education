@@ -1,0 +1,23 @@
+{
+	"name": "mvc",
+	"require": {
+		"php": ">=5.3"
+	},
+	
+	"minimum-stability": "alpha",
+	"authors": [
+		{
+			"name": "Luciano C Sanots",
+			"email": "lcorreasantos@gmail.com"
+		}
+	],	
+	"autoload": {
+		"psr-4": {
+			"LETI\\" : "vendor/",
+			"App\\" : "App/"
+		}
+	},
+	"config": {
+		"bin-dir": "bin"
+	}
+}
