@@ -1,5 +1,5 @@
 <?php
-
+/* Comentado para realizar commit */
 namespace App;
 
 use LETI\Init\Bootstrap;

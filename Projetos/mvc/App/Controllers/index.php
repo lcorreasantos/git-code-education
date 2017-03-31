@@ -1,5 +1,5 @@
 <?php
-
+/* Retirei comandos obsoletos e comentados */
 namespace App\Controllers;
 
 use LETI\Controller\Action;
@@ -9,14 +9,7 @@ class Index
 {
 	public function index()
 	{
-		//$nomes = array();
-		//$nomes[] = "Luciano";
-		//$nomes[] = "Tiago";
-		//// atribuindo para view
-		//$this->view->nomes = $nomes;
-		
 		$srtigo = Container::getClass("Artgio");
-		//$artigos = $artigo->fetchAll();
 		$artigos = $artigo->find(1);
 	
 		$this->view->artigos = $artigos;
