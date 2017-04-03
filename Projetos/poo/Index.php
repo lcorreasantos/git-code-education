@@ -1,14 +1,40 @@
 <?php
 
+/*
 require_once "Pessoa.php";
 
 $pessoa1 = new Pessoa("Luciano", 45);
 $pessoa2 = new Pessoa("Estela", 47);
 
-echo $pessoa1->correr(50);
+echo $pessoa1->correr(50)."<br>";
+*/
 
 require_once "Produto.php";
+require_once "Tenis.php";
 
-$produto1 = new Tenis();
-$produto
+$produto = new Produto();
+$produto->setNome("Tenis Exemplo")
+				->setDescricao("Essa é a descrição do produto")
+				->setEstoque(10)
+				->setValor(1000);
+
+/*
+$tenis = new Tenis();
+
+if($tenis instanceof Produto){
+	echo "É um tipo de tênis";
+}else{
+	echo "Não é um tipo de tênis";
+}
+
+require_once "TenisAdidas.php";
+require_once "SapaTenis.php";
+
+$tenis = new TenisAdidas();
+$tenis->getCor();
+
+$tenis2 = new SapaTenis();
+$tenis2->getCor();
+$tenis2->getTamanho();
+*/
 ?>
