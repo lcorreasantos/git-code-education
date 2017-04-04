@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+		<script>
+			var myApp = angular.module('myApp', []);
+				myApp.controller('CtrlApp', ['$scope', function($scope){
+					$scope.nome = "Luciano";
+				}]);
+
+		</script>
+  </head>
+  <body>
+
+		<div ng-controller="CtrlApp">
+			<h1>{{nome}}</h1>
+		</div>
+	
+  </body>
+</html>
