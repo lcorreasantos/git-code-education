@@ -7,9 +7,10 @@
   	Busca: <input type:"search" ng-model="busca">
   	
 		<div ng-controller="CtrlLista">
+			<div>Total: <b>{{pessoas.length}}</b></div>
 			<ul>
 				<li ng-repeat="pessoa in pessoas | filter:busca">
-					{{pessoa.nome}}, <b>{{pessoa.cidade}}</b>
+					{{pessoa.nome}}, <b>{{pessoa.cidade}}</b> <button ng-click="remover($index)">Remover</button>
 				</li>
 			</ul>
 			
@@ -40,6 +41,10 @@
 					$scope.vNome = "";
 					$scope.vCidade = "";
 				};
+				
+				$scope.remover = function(index) {
+					$scope.pessoas.splice(index, 1);
+				}
 			};
 		</script>
   </body>

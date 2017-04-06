@@ -1,18 +1,16 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="pessoas">
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+ 	 	<title>Pessoas</title>
   </head>
   <body>
-    <div>
-      <label>Primeiro nome:</label>
-      <input type="text" ng-model="firstName">
-
-      <label>Último nome:</label>
-      <input type="text" ng-model="lastName">
-
-      <hr>
-      <h1>Hello {{firstName}} {{lastName}}!</h1>
-    </div>
+		<div ng-controller="CtrlPessoas">
+			<h1>Gerenciamento de Pessoas</h1>
+			
+			<div ng-view></div>
+						
+		</div>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+  <script src="pessoas.js"></script>
 </html>
